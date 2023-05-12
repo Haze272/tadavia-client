@@ -1,1 +1,24 @@
-<p>header works!</p>
+<header #header>
+  <a [routerLink]="['']" class="header-logo">
+    <img src="/assets/img/logo.png" alt="">
+  </a>
+  <nav>
+    <ul class="header-navigation">
+      <li>
+        <a [routerLink]="['']">Меню</a>
+      </li>
+      <li>
+        <a [routerLink]="['/promotions']">Акции</a>
+      </li>
+      <li>
+        <a [routerLink]="['/faq']">О доставке</a>
+      </li>
+      <li>
+        <a [routerLink]="['/tracking']">Отследить заказ</a>
+      </li>
+    </ul>
+  </nav>
+  <a class="header-cart">
+    <img src="/assets/img/cart-icon.png" alt="">
+  </a>
+</header>
