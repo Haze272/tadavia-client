@@ -17,10 +17,15 @@ $maxWidth: 1280;
   --main-text: #FFFFFF;
 }
 
+::selection {
+  color: white;
+  background-color: var(--main-blue);
+}
+
 html, body { height: 100%; }
 body {
   margin: 0;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   background-color: var(--main-yellow);
 

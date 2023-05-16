@@ -1,0 +1,36 @@
+footer {
+  background: url(/assets/img/texture-bg-footer.svg), var(--main-red);
+  background-repeat: repeat;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  p {
+    font-size: 15px;
+  }
+}
+
+.header-logo {
+  flex: 0 1 80px;
+
+  img {
+    width: 80px;
+    height: 64px;
+  }
+}
+
+.footer-navigation {
+  display: flex;
+  gap: 32px;
+  flex: 1 1 auto;
+
+  a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-text);
+  }
+}

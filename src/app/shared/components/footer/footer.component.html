@@ -1,3 +1,35 @@
 <footer>
-  <p>footer works!</p>
+  <a [routerLink]="['']" class="footer-logo">
+    <img src="/assets/img/logo.png" alt="">
+  </a>
+  <nav>
+    <ul class="footer-navigation">
+      <li>
+        <a [routerLink]="['']">Меню</a>
+      </li>
+      <li>
+        <a [routerLink]="['/promotions']">Акции</a>
+      </li>
+      <li>
+        <a [routerLink]="['/faq']">О доставке</a>
+      </li>
+      <li>
+        <a [routerLink]="['/tracking']">Отследить заказ</a>
+      </li>
+    </ul>
+  </nav>
+  <p>Доставка мексиканской еды в г. Москва.</p>
+
+  <span>
+    <p>Контакты:</p>
+    <p>info@tadavia.ru</p>
+    <p>+7 (499) 333-34-34</p>
+  </span>
+
+  <span>
+    <p>ИНН: 1192323213</p>
+    <p>ОГРН: 1123823610232</p>
+  </span>
+
+  <p>© 2023 ООО “Tada Via” все права защищены</p>
 </footer>
