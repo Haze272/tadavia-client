@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {RouterLink} from "@angular/router";
 import { HeadingUnderlineComponent } from './components/heading-underline/heading-underline.component';
+import { MainButtonComponent } from './components/main-button/main-button.component';
 
 
 
@@ -14,12 +15,14 @@ import { HeadingUnderlineComponent } from './components/heading-underline/headin
     FooterComponent,
     SidebarComponent,
     HeadingUnderlineComponent,
+    MainButtonComponent,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    HeadingUnderlineComponent
+    HeadingUnderlineComponent,
+    MainButtonComponent
   ],
   imports: [
     CommonModule,
