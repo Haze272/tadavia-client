@@ -22,5 +22,8 @@
 </section>
 <section class="menu">
   <app-heading-underline text="МЕНЮ"></app-heading-underline>
+  <div class="menu__container">
+    <app-menu-item *ngFor="let item of menuItems$ | async;" [item]="item"></app-menu-item>
+  </div>
 </section>
 
