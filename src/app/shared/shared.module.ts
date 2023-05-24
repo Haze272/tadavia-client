@@ -6,6 +6,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {RouterLink} from "@angular/router";
 import { HeadingUnderlineComponent } from './components/heading-underline/heading-underline.component';
 import { MainButtonComponent } from './components/main-button/main-button.component';
+import { QuantityControlComponent } from './components/quantity-control/quantity-control.component';
 
 
 
@@ -16,13 +17,15 @@ import { MainButtonComponent } from './components/main-button/main-button.compon
     SidebarComponent,
     HeadingUnderlineComponent,
     MainButtonComponent,
+    QuantityControlComponent,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
     HeadingUnderlineComponent,
-    MainButtonComponent
+    MainButtonComponent,
+    QuantityControlComponent
   ],
   imports: [
     CommonModule,

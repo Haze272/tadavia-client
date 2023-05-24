@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {MenuItem} from "../../../../../models/menu-item.model";
+import {CartService} from "../../../../../services/cart.service";
 
 @Component({
   selector: 'app-menu-item',
@@ -9,4 +10,10 @@ import {MenuItem} from "../../../../../models/menu-item.model";
 export class MenuItemComponent {
   @Input() item!: MenuItem;
 
+  constructor(private cartService: CartService) {
+  }
+
+  addItemToCart() {
+    this.cartService.addToCart(this.item, 1);
+  }
 }

@@ -15,7 +15,8 @@ $maxWidth: 1280;
   --main-red-hover: #860e34;
   --main-yellow: #F8C900;
   --main-blue: #3DFFDC;
-  --main-text: #FFFFFF;
+  --main-text-dark: #FFFFFF;
+  --main-text-light: #000000;
 }
 
 ::selection {
@@ -75,7 +76,7 @@ ol[class] {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a {
   text-decoration: none;
-  color: var(--main-text);
+  color: var(--main-text-dark);
   cursor: pointer;
 }
 
@@ -131,24 +132,24 @@ h2 {
 }
 
 h3 {
-  color: var(--main-text);
+  color: var(--main-text-dark);
   @include adaptiv-font(42, 24);
   font-weight: 800;
 }
 
 h4 {
-  color: var(--main-text);
+  color: var(--main-text-dark);
   @include adaptiv-font(32, 22);
 }
 
 p {
   @include adaptiv-font(21, 16);
-  color: var(--main-text);
+  color: var(--main-text-dark);
 }
 
 span {
   @include adaptiv-font(21, 16);
-  color: var(--main-text);
+  color: var(--main-text-dark);
 
   &.accent-red {
     font-size: inherit;
@@ -160,7 +161,7 @@ span {
   }
   &.accent-white {
     font-size: inherit;
-    color: var(--main-text);
+    color: var(--main-text-dark);
   }
 }
 

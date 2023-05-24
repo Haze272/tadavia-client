@@ -1,0 +1,26 @@
+.quantity-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 104px;
+
+  &__button {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-red);
+    cursor: pointer;
+
+    img {
+      width: 16px;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-text-light);
+  }
+}

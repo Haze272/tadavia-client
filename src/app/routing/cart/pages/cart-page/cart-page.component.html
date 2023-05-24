@@ -1,1 +1,6 @@
-<h2>Cart page</h2>
+<section class="cart">
+  <app-heading-underline text="КОРЗИНА"></app-heading-underline>
+  <div class="cart__list">
+    <app-cart-item *ngFor="let item of cart" [item]="item"></app-cart-item>
+  </div>
+</section>

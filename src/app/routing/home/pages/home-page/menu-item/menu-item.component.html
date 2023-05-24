@@ -9,7 +9,10 @@
     <p class="menu-item__ingredients">{{item.ingredients.join(' ')}}</p>
   </div>
   <div class="menu-item__button">
-    <app-main-button text="Добавить"></app-main-button>
+    <app-main-button
+      (click)="addItemToCart()"
+      text="Добавить"
+    ></app-main-button>
   </div>
 
 </div>
